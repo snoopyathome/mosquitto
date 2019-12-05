@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.10
 
 RUN apk add --update ca-certificates mosquitto &&\
     adduser -h /home/service -D -s /bin/false service &&\
@@ -6,4 +6,4 @@ RUN apk add --update ca-certificates mosquitto &&\
 
 USER service
 
-CMD ["mosquitto", "-c", "/configuration/mosquitto.conf"]
+CMD ["mosquitto", "-c", "/defaults/mosquitto.conf"]
