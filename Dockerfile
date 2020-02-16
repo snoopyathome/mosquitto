@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.11
 
 RUN apk add --update ca-certificates mosquitto &&\
     adduser -h /home/service -D -s /bin/false service &&\
