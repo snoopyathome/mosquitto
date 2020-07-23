@@ -6,4 +6,4 @@ RUN apk add --update ca-certificates mosquitto &&\
 
 USER service
 
-CMD ["mosquitto", "-c", "/defaults/mosquitto.conf"]
+CMD ["mosquitto", "-c", "/config/mosquitto.conf"]
